@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Despertador</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="conteiner">
-            <div class="display">
-
-            </div>
-            <div class="display">
-
-            </div>
-            <div class="display">
-
-            </div>
-        </div>
+      <div class="display" id="hora"></div>
+      <div class="display" id="meio">:</div>
+      <div class="display" id="minuto"></div>
     </main>
-</body>
+    <section>
+      <form>
+        <input type="time" id="horaDespertador"/>
+        <button type="submit">DEFINIR</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
