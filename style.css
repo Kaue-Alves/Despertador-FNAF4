@@ -3,6 +3,11 @@
     src: url(fonte/digital.otf);
 }
 
+@font-face {
+    font-family: 'relogio2';
+    src: url(fonte/digital2.ttf);
+}
+
 @keyframes blink {
     0% {color: transparent;}
     50% {color: red;}
@@ -12,6 +17,18 @@
 .blinking {
     animation: blink 0.4s linear infinite;
     color: red;
+}
+
+@keyframes blinkSlow {
+    0% {color: transparent;}
+    25% {color: white;}
+    50% {color: transparent;}
+    75% {color: white;}
+    100% {color: transparent;}
+}
+
+.blinkingSlow {
+    animation: blinkSlow 2s linear infinite;
 }
 
 .esconder {
@@ -53,6 +70,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+#meio {
+    font-family: 'relogio2';
 }
 
 form {

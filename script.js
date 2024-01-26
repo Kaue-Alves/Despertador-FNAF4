@@ -16,6 +16,7 @@ function relogio() {
     tocar = localStorage.getItem('horaD').toString().padStart("2", 0)
     if (horaAtualFormatada == tocar) {
         hora.classList.add('blinking');
+        meio.classList.remove('blinkingSlow');
         meio.classList.add('blinking');
         minuto.classList.add('blinking');
         form.classList.add('esconder')
@@ -31,7 +32,7 @@ function relogio() {
         document.querySelector("button").readOnly = false
     } else {
         hora.classList.remove('blinking');
-        meio.classList.remove('blinking');
+        meio.classList.add('blinkingSlow');
         minuto.classList.remove('blinking');
         form.classList.remove('esconder')
         som.pause()
